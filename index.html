@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Queue</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
     <script src="script.js" defer></script>
-</head>
-<body>
-    <section class="mirror-filter screen-base">
+  </head>
+  <body>
+    <main class="main-content">
+      <section class="mirror-filter screen-base">
         <div class="input-user">
-            <p>Add a user to the queue</p>
-            <input type="text" name="username" placeholder="Username" id="username" class="username">
+          <p class="input-user_text">Add a user to the queue</p>
+          <input
+            type="text"
+            name="username"
+            placeholder=" Username"
+            id="username"
+            class="input-user_input"
+          />
         </div>
-        
-        <div class="manipulations">
-            <button class="button" id="push-button">Join the queue</button>
-            <button class="button" id="shift-button">Complete Service</button>
-        </div>
-    </section>  
 
-    <section class="mirror-filter queue-screen">
-            <p class="the-queue" id="queue"></p>
-    </section>
-</body>
+        <div class="manipulations">
+          <button class="manipulation_button" id="push-button">Join the queue</button>
+          <button class="manipulation_button" id="shift-button">Complete Service</button>
+        </div>
+      </section>
+
+      <section class="queue-screen" id="queue-screen">
+      </section>
+    </main>
+  </body>
 </html>
